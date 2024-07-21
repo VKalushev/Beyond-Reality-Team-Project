@@ -1,0 +1,12 @@
+GET http://localhost:8000/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2NjkxMjM1OTksImV4cCI6MTY2OTEyNTM5OX0.zrSlIGJWIdfIID7c6QiRjnPIn7B1515hDmd1wBiRQ7E
+
+###
+
+POST http://localhost:8000/projects
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}

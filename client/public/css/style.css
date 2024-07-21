@@ -1,0 +1,381 @@
+html, body {
+    margin: 0;
+}
+
+.appWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+
+  width: 100%;
+  height: calc(100vh - 10vh - 88px);
+}
+
+.appWrapper #renderCanvas {
+  display: block;
+  font-size: 0;
+}
+
+.appWrapper div {
+  width: 32em;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+/* Navbar*/
+.primary-navigation {
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  padding-top: 2vh; */
+  background-color: black;
+  width: auto;
+  list-style: none;
+  display: inline-flex;
+  color: white !important;
+}
+
+nav ul {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.topnav ul li {
+  display: inline;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  margin: 10px;
+  color: white !important;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 10vh;
+  background: black;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  border-bottom-style: solid;
+  border-color: greenyellow;
+  position: fixed; 
+  padding-top: 18px;
+}
+
+/* Navbar links */
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  color: greenyellow;
+}
+
+/* Active/current link */
+.topnav a.active {
+  color: greenyellow;
+}
+
+a {
+  color: white !important;
+}
+
+/* Navbar title */
+.toolboxText {
+  font-family: changeling-neo, sans-serif;
+  font-weight: 200;
+  color: greenyellow;
+  display: inline;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Home page hero banner*/
+.main-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hero-title {
+  font-family: changeling-neo, sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #000000;
+  padding-left: 5vw;
+  color: white;
+  position: absolute;
+  z-index: 9999;
+  margin-top: -10vh;
+
+}
+
+.hero-text {
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding-left: 5vw;
+  padding-right: 50vw;
+  font-family: poppins, sans-serif;
+  font-size: 24px;
+  margin: 0;
+  z-index: 9999;
+
+}
+
+/* 
+p {
+  font-family: poppins, sans-serif;
+} */
+
+.footer {
+  display: inline-flex;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-color: black;
+  border-top-style: solid;
+  border-color: greenyellow;
+  color: white;
+}
+
+ /* Form style*/
+
+.LoginSection {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30vh;
+}
+
+.log-in {
+color: white;
+background: #09c265;
+background: 
+  -webkit-linear-gradient(to right, #136a8a, greenyellow, );
+background: 
+  linear-gradient(to left, greenyellow, #055844);
+margin: auto;
+box-shadow: 
+  0px 2px 10px rgba(0,0,0,0.2), 
+  0px 10px 20px rgba(0,0,0,0.3), 
+  0px 30px 60px 1px rgba(0,0,0,0.5);
+border-radius: 8px;
+padding: 50px;
+}
+.log-in .head {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.log-in .head .company {
+font-size: 2.2em;
+align-items: left;
+}
+
+.company {
+font-family: changeling-neo, sans-serif;
+}
+
+.log-in .msg {
+text-align: center;
+}
+.log-in .form input[type=text].text {
+border: none;
+background: none;
+box-shadow: 0px 2px 0px 0px white;
+width: 100%;
+color: white;
+font-size: 1em;
+outline: none;
+}
+.log-in .form .text::placeholder {
+color: #D3D3D3;
+}
+.log-in .form input[type=password].password {
+border: none;
+background: none;
+box-shadow: 0px 2px 0px 0px white;
+width: 100%;
+color: white;
+font-size: 1em;
+outline: none;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.log-in .form .password::placeholder {
+color: #D3D3D3;
+}
+.log-in .form .btn-login {
+font-family: poppins, sans-serif;
+background: none;
+text-decoration: none;
+color: white;
+box-shadow: 0px 0px 0px 2px white;
+border-radius: 3px;
+padding: 5px 2em;
+transition: 0.5s;
+}
+.log-in .form .btn-login:hover {
+background: white;
+color: dimgray;
+transition: 0.5s;
+}
+.log-in .forgot {
+text-decoration: none;
+color: white;
+float: right;
+}
+
+/* PROJECT HTML CSS */
+
+.PageContent {
+  background-color: white;
+}
+
+
+.carousel-item {
+height: 10rem;
+/* width: 120rem; */
+background: white;
+color: black;
+}
+
+.carousel-inner {
+text-align: center;
+/* width: auto; */
+}
+
+.card {
+text-align: center;
+align-items: center;
+padding: 8rem;
+margin-top: 10rem;
+height: auto;
+width: 30vw;
+}
+
+.card-container {
+display: flex;
+justify-content: center;
+}
+
+h3 {
+font-family: changeling-neo, sans-serif;
+font-weight: 300;
+}
+
+/* Home Page CSS Cleanup */
+
+.col {
+text-align: left;
+}
+
+.HomePageImages {
+align-items: center;
+width: 110rem;
+margin-top: 4px;
+}
+
+.homeimage2{
+width: auto;
+}
+
+.homeimage3{
+width: 60rem;
+} 
+
+#homevideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+ 
+@media (max-width:1366px) {
+
+li {
+  font-weight: 100;
+  font-size: small;
+}
+
+.hero-title {
+  font-size: 42px;
+}
+
+.hero-text {
+  font-size: 18px;
+}
+}
+
+@media (max-width:800px) {
+
+  .mobile-nav-toggle {
+    position: absolute;
+    background-color: greenyellow;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    top: 2.2rem;
+    right: 1.8rem;
+    z-index: 9999;
+  }
+
+  .topnav {
+    position: fixed;
+    background-color:rgba(0,20,0,0.98);
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    z-index: 8000;
+    transform: translateY(0%);
+  }
+
+.topnav [data-visible="true"] {
+  transform: translateY(0%);
+}
+
+
+  .primary-navigation {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0); 
+    padding-bottom: 30vh;
+  }
+
+  .top {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0); 
+    padding-bottom: 30vh;
+  }
+
+  li {
+    font-weight: 100;
+    font-size: 15px;
+    }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-text {
+    font-size: 12px;
+  }
+
+  .toolboxText {
+    font-family: changeling-neo, sans-serif;
+    font-weight: 200;
+    color: greenyellow;
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+  }
+}

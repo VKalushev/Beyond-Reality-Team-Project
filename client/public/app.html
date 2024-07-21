@@ -1,0 +1,111 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zfd6qmr.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+
+    <title>Project Toolbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="/final/index.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav d-flex justify-content-between" data-visible="false">
+        <img src="/images/logo.png" id="SiteLogo" alt="Beyond Reality Logo" width="130px">
+        <div class="toolboxText">Project Toolbox</div>
+        <ul class="primary-navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/app.html">3D Space</a></li>
+            <li><a href="/projects.html">Project Managment</a></li>
+            <div class="login"><a href="/login.html"><i class="bi bi-person"
+                        style="font-size: 30px;color: white; margin-right: 40px; margin-left: 10px;"></i></a></div>
+        </ul>
+    </div>
+    </div>
+
+    <div class="appWrapper">
+        <canvas id="renderCanvas" touch-action="none"></canvas>
+
+        <div>
+            <h2><strong>NOTE: This is a prototype, as such projects can be loaded but not saved.</strong></h2>
+            <hr/>
+
+            <h2>How to Use</h2>
+            <span>This tool is a prototype, controls are a best-effort made in the time available.</span>
+            <ul>
+                <li>Use right click and the arrow keys to move the camera around.</li>
+                <li>Use the 'Place Asset' button to place down an asset. Note some assets may trigger a freeze.</li>
+                <li>Use the 'Delete Asset' button to delete an asset from the project.</li>
+                <li>Click on an asset to view its properties, and use the WASD and QE buttons to move it around.</li>
+                <li>Press the Escape key to deselect an asset.</li>
+            </ul>
+            <hr />
+
+            <h2>Selected Asset</h2>
+            <span id="assetSelection">No asset selected</span>
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+
+                <tbody id="selectedData">
+                </tbody>
+            </table>
+            <hr />
+
+            <h2>Project Totals</h2>
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Sum</th>
+                    </tr>
+                </thead>
+
+                <tbody id="totalData">
+                </tbody>
+            </table>
+            <hr />
+
+            <h2>Assets List</h2>
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Asset Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+
+                <tbody id="assetsList">
+                </tbody>
+            </table>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href=""><i class="p-2 bi bi-facebook" style="font-size: 30px;color: greenyellow;"></i></a>
+        <a href=""><i class="p-2 bi bi-twitter" style="font-size: 30px;color: greenyellow;"></i></a>
+        <a href=""><i class="p-2 bi bi-linkedin" style="font-size: 30px;color: greenyellow;"></i></a>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="/js/api.js"></script>
+    <script async src="/js/main.js" onload="onPageLoad()"></script>
+
+    <!-- Compiled TS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
